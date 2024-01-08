@@ -1,0 +1,26 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d I II III IV V VI
+
+bspc config border_width         2
+bspc config window_gap          10
+
+bspc config split_ratio          0.55
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config automatic_scheme longest_side
+bspc config initial_polarity first_child
+bspc config removal_adjustment true
+bspc config normal_border_color "f77ce6"
+bspc config focused_border_color "#d9a2fb"
+bspc config presel_feedback_color "#d9a2fb"
+
+#AutoStart
+sxhkd &
+xrandr --newmode "1920x1080R"  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +HSync -VSync && xrandr --addmode DisplayPort-9 1920x1080R && xrandr --output DisplayPort-9 --mode 1920x1080 &
+picom --config $HOME/.config/picom.conf &
+polybar &
+xset r rate 350 50 &
+feh --no-fehbg --bg-center /usr/share/backgrounds/dusktown.png &

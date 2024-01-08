@@ -1,0 +1,73 @@
+##---------- Program Hotkeys ----------##
+
+# Reload sxhkdrc
+super + shift + r
+    pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# Reload picom
+super + ctrl + r
+    pkill -usr1 -x picom; notify-send 'picom' 'Reloaded config'
+
+# Open Browser
+super + w
+	xdg-open $HOME/Downloads/tenpo_files/tenpo.html
+
+# Open htop
+ctrl + shift + Escape
+	kitty htop
+
+# Open nnn
+super + e
+	kitty nnn -aCDEHU -T v -P p
+
+# Open kitty
+super + t
+	kitty
+
+# Open dmenu
+super + r
+	dmenu_run -sb "#D9A2FB" -nb "#362C34" -sf "#362C34" -nf "#F77CE6" -i -p "klaymaji<3"
+
+# Take a screenshot with Shotgun
+Print
+	shotgun-selection
+
+# Open pulsemixer
+super + v
+	kitty pulsemixer
+
+##---------- Bspwm ----------##
+
+# Quit/Restart bspwm
+ctrl + shift + r
+	bspc wm -r
+
+# Close App
+alt + F4
+	bspc node -{c,k}
+
+# Move a floating window
+super + ctrl + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# Preselect the direction
+super + {KP_Left,KP_Down,KP_Up,KP_Right}
+	bspc node -p {west,south,north,east}
+
+# Set the window state
+super + {KP_Divide,KP_Multiply,KP_Begin,KP_Insert}
+	bspc node -t {tiled,pseudo_tiled,"~"floating,"~"fullscreen}
+
+# Send the window to another edge of the screen
+super + {_,alt + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Switch workspace
+ctrl + {Left,Right}
+	bspc desktop -f {prev.local,next.local}
+
+# Focus or send focused window to another workspace
+ctrl + {_,alt + }{KP_End,KP_Down,KP_Next,KP_Left,KP_Begin,KP_Right}
+	bspc {desktop -f,node -d} '^{1,2,3,4,5,6}'
+
+##---------- EOF ----------##
