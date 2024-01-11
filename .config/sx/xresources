@@ -1,0 +1,34 @@
+Xcursor.theme: Vimix-Cursors-klaymaji
+
+URxvt*buffered: true
+URxvt*cursorBlink: true
+URxvt*scrollBar: false
+URxvt*font: xft:Terminess Nerd Font:size=13:antialias=true,xft:Symbols Nerd Font:minspace=False
+URxvt*borderless: 1
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt.depth: 32
+URxvt.perl-ext-common:-confirm-paste
+
+*background: [95]#362c34
+*foreground: #f3c6c6
+*cursorColor: #f3c6c6
+*color0: #362c34
+*color1: #EF7895
+*color2: #D4729A
+*color3: #FE8D92
+*color4: #BE7FE6
+*color5: #CC75A6
+*color6: #B06EA7
+*color7: #f3c6c6
+*color8: #51424E
+*color9: #ff84b5
+*color10: #ff7fc4
+*color11: #ff9ca5
+*color12: #d9a2fb
+*color13: #ff83da
+*color14: #f77ce6
+*color15: #ffe4e4
