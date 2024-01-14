@@ -2,7 +2,9 @@ Xcursor.theme: Vimix-Cursors-klaymaji
 
 URxvt*buffered: true
 URxvt*cursorBlink: true
+URxvt*underlineColor: #BE7FE6
 URxvt*scrollBar: false
+URxvt*loginShell: true
 URxvt*font: xft:Terminess Nerd Font:size=13:antialias=true,xft:Symbols Nerd Font:minspace=False
 URxvt*borderless: 1
 URxvt.iso14755: false
@@ -16,6 +18,8 @@ URxvt.perl-ext-common:-confirm-paste
 *background: [95]#362c34
 *foreground: #f3c6c6
 *cursorColor: #f3c6c6
+*pointerColorBackground: #F3C6C6
+*pointerColorForeground: $362C34
 *color0: #362c34
 *color1: #EF7895
 *color2: #D4729A
