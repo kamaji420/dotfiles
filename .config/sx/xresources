@@ -12,8 +12,11 @@ URxvt.iso14755_52: false
 URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
+URxvt.secondaryScreen: 1
+URxvt.secondaryScroll: 0
 URxvt.depth: 32
-URxvt.perl-ext-common:-confirm-paste
+URxvt.perl-ext:
+URxvt.perl-ext-common:
 
 *background: [95]#362c34
 *foreground: #f3c6c6

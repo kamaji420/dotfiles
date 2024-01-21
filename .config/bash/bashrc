@@ -40,6 +40,10 @@ bind 'set keymap vi-insert'
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 bind '$endif'
+# these change the cursor depending on what vi mode you're in
+bind 'set show-mode-in-prompt On'
+bind 'set vi-ins-mode-string \1\e[6 q\2'
+bind 'set vi-cmd-mode-string \1\e[2 q\2'
 
 # Readline settings
 bind 'set bell-style none'
@@ -54,7 +58,7 @@ bind 'set echo-control-characters Off'
 bind 'set enable-bracketed-paste On'
 
 # My commands
-fastfetch
+pfetch
 shopt -s autocd
 complete -d cd
 complete -F _command sudo doas
