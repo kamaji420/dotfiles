@@ -1,11 +1,9 @@
-export HISTFILE=/$HOME/.cache/bash_history
+export HISTFILE="$HOME/.cache/bash_history"
 export EDITOR=neatvi
 export VISUAL=neatvi
 export PATH="$HOME/.local/bin:/var/lib/flatpak/exports/bin:$PATH"
 export GTK_THEME=klaymaji-themix-qam
 source $HOME/.config/bash/bashrc
-
-export PF_INFO="ascii title os host kernel uptime pkgs shell wm editor memory"
 
 # NNN Configuration
 export NNN_OPTS="aCDEHU"
