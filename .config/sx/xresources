@@ -16,6 +16,9 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
+URxvt.keysym.Shift-Up: command:\033]720;1\007
+URxvt.keysym.Shift-Down: command:\033]721;1\007
+URxvt*geometry: 100x100-11-34
 URxvt.depth: 32
 URxvt.perl-ext:
 URxvt.perl-ext-common:
