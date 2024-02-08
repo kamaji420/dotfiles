@@ -3,11 +3,12 @@
 xrdb -load ~/.config/sx/xresources
 # xrandr --newmode "1920x1080R"  138.50  1920 1968 2000 2080  1080 1083 1088 1111 +hsync -vsync && xrandr --addmode DisplayPort-9 1920x1080R && xrandr --output DisplayPort-9 --mode 1920x1080R &
 # xrandr --output eDP1 --mode 1366x768 --rate 60
-feh --no-fehbg --bg-center /usr/share/backgrounds/dusktown.png &
+feh --no-fehbg --bg-center /usr/share/backgrounds/dusk-kmj.png &
 unclutter &
+clipmenud &
 dbus-run-session -- pipewire &
 slstatus &
-xset r rate 350 50 &
+xset r rate 300 60 &
 xset dpms 300 &
 xss-lock -- slock &
 exec dbus-run-session -- dwm

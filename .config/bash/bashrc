@@ -9,7 +9,7 @@
 
 PS1='\[\e[38;5;12m\]<\[\e[38;5;14m\]3\[\e[0m\]|[\w]\$ '
 
-source=$HOME/.profile
+source="~/.profile"
 
 clear
 
@@ -87,17 +87,13 @@ rm /tmp/tmpfile
 
 # Alias's
 alias q='exit'
+alias c='clear'
 alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -iv'
 alias ls='ls -aFh --color=always'
-alias n3='nnn -T v -P p'
+alias n3='nnn -T v'
 alias g='cd ~/.local/src'
 alias w='curl wttr.in'
-alias xi='doas xbps-install -S'
-alias xq='doas xbps-query'
-alias xs='doas xbps-query -Rs'
-alias xr='doas xbps-remove -Ro'
 alias update-dwm='cd ~/.local/src/dwm_klaymaji && doas make clean install CC=clang && pkill dwm'
 alias update-nnn-plugins='sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"'
-alias crispydoom='flatpak run io.github.fabiangreffrath.Doom'

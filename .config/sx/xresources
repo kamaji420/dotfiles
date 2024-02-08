@@ -5,9 +5,8 @@ URxvt*cursorBlink: true
 URxvt*underlineColor: #BE7FE6
 URxvt*scrollBar: false
 URxvt*loginShell: true
-URxvt*font: xft:Terminess Nerd Font:size=13:antialias=true,xft:Symbols Nerd Font:minspace=False
+URxvt*font: xft:Terminess Nerd Font:size=13:antialias=true,xft:Symbols Nerd Font Mono:minspace=False
 URxvt.letterSpace: 0
-URxvt.lineSpace: -1
 URxvt*borderless: 1
 URxvt.iso14755: false
 URxvt.iso14755_52: false
@@ -16,14 +15,12 @@ URxvt*scrollWithBuffer: true
 URxvt*scrollTtyKeypress: true
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
-URxvt.keysym.Shift-Up: command:\033]720;1\007
-URxvt.keysym.Shift-Down: command:\033]721;1\007
-URxvt*geometry: 100x100-11-34
+URxvt*geometry: 400x400
 URxvt.depth: 32
 URxvt.perl-ext:
 URxvt.perl-ext-common:
 
-*background: [95]#362c34
+*background: #362c34
 *foreground: #f3c6c6
 *cursorColor: #f3c6c6
 *pointerColorBackground: #F3C6C6
